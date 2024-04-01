@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .modaldiv{
+            display: block;
+            background-color: red;
+        }
+        h1, modalClosebtn{
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+   <button class="modalOpenbtn" id="mob" onclick="openmodal()">open</button>
+
+   <div class="modaldiv" id="mdiv">
+    <h1>hello world</h1>
+    <button class="modalClosebtn" id="mcb" onclick="closemodal()">close</button>
+   </div>
+
+   <script>
+    const modal = document.getElementById("mdiv");
+
+    function closemodal(){
+        modal.style.display = 'none';
+    }
+
+    function openmodal(){
+        modal.style.display = 'block';
+    }
+
+   </script>
+</body>
+</html>
+
+
+<!-- 
+    Open btn
+    model with close btn
+    link openbtn to script func
+    link closebtn to script func
+    open have msdn
+ -->
